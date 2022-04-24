@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, Arial, serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #064e8d;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+header img#logo {
+    height: 2.5rem;
+}
+
+footer img#logoDois {
+    height: 3rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header ul#menu {
+    list-style: none;
+    display: flex;
+}
+
+header ul#menu li{
+    padding: 0 1.5rem;
+}
+
+header a {
+    color: #ffb800;
+    text-decoration: none;
+}
+
+header li:hover {
+    color:#f00013;
+    transform: scale(1.2);
+}
+
+main {
+    min-height: 80%;
+    background-color: silver;
+}
+
+section#detalhes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+section#detalhes h1 {
+    color: #ffb800;
+    text-shadow: 2px 2px #064e8d;
+    padding-top: 0.7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+form fieldset#main_field {
+    border: #064e8d solid 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+form legend {
+    background-color: #064e8d;
+    color: #ffb800;
+    text-align: center;
+}
+
+form fieldset fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.4rem;
+    padding: 0.3rem;
+}
+
+form fieldset#main_field button {
+    background-color: #064e8d;
+    color: #ffb800;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+form fieldset#main_field button:hover {
+    transform:scale(1.1)
+}
+
+input {
+    width: 30rem;
+}
+
+table {
+    width: 25rem;
+    text-align: center;
+}
+
+table td {
+    border: 0.1rem solid #064e8d;
+}
+
+table thead th{
+    background-color: #064e8d;
+    color: #ffb800;
+}
+
+table tr:nth-child(even) {
+    background-color: #064e8d;
+    color: #ffb800;
+}
+
+section#pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+article.card {
+    height: 20rem;
+    width: 17rem;
+    box-shadow: 5px 5px 5px 5px rgb(177, 177, 177);
+    padding: 1rem;
+    transition: transform .5s ease-in-out;
+}
+
+article.card:hover {
+    transform: scale(1.1);
+    transition-timing-function:ease-in-out;
+}
+
+article.card div.card_image {
+    height: 85%;
+    border: 5rem;
+}
+
+article.card div.card_image img {
+    height: 100%;
+    align-items: center;
+}
+
+article.card div.info {
+    color: #064e8d;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#pokemons a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    height: 10%;
+    background-color: #064e8d;
+    color: #ffb800;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+footer div {
+    padding-left: 2rem;
+}

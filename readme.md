@@ -13,6 +13,9 @@ As ferramentas usadas para este projeto são:
     <img src="https://img.icons8.com/color/96/000000/nodejs.png"/>
 </div>
 
+## Link do Heroku
+https://pokedex-beatriz.herokuapp.com/
+
 ## Contato
 
 <a href="https://www.linkedin.com/in/beatriz-lages-melga%C3%A7o-036553218/" target="blank">

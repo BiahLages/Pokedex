@@ -9,6 +9,11 @@
 </head>
 <body>
     <%- include('./partials/header.ejs') %>
+    <% if (message != "") { %>
+        <section id="message">
+            <p>Pokémon cadastrado com sucesso!</p> <span id="close">&times;</span>
+        </section>
+    <% } %>
     <main>
         <section id="pokemons">            
         <% pokedex.forEach((element) => { %>
@@ -29,5 +34,6 @@
     </main>
     
     <%- include('./partials/footer.ejs') %>
+    <script src="/script.js"></script>
 </body>
 </html>

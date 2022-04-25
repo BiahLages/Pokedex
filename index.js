@@ -18,6 +18,8 @@ app.listen(port, () => {
     console.log(`Rodando na porta ${port}.`)
 })
 
+let message = "";
+
 const pokedex = [
     {
         id: 1,
@@ -70,8 +72,14 @@ const pokedex = [
 ];
 
 app.get('/', (req, res) => {
+
+    setTimeout(() => {
+        message = "";
+      }, 1000);
+
     res.render('index.ejs', {
-        pokedex
+        pokedex,
+        message
     })
 });
 
@@ -95,5 +103,6 @@ app.post('/cadastro', (req, res) => {
     let i = pokedex[pokedex.length - 1].id + 1
     const {nome, numero, tipo, imagem, descricao, altura, peso, categoria, habilidade} = req.body
     pokedex.push({id: i, nome, numero, tipo, imagem, descricao, altura, peso, categoria, habilidade})
+    message = 'Pokémon cadastrado com sucesso!'
     res.redirect('/')
 });
